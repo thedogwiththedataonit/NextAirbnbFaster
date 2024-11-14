@@ -12,7 +12,7 @@ export default async function Layout({
     <div className="flex flex-col w-full flex-grow font-mono w-full">
         <ul className="flex flex-row items-start justify-center gap-3">
           {allCollections.map((collection) => (
-            <li key={collection} className="">
+            <li key={collection}>
               <Link
                 prefetch={true}
                 href={`/${collection}`}

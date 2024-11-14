@@ -13,6 +13,11 @@ export default async function Home() {
 
   return (
     <div className="w-full">
+        <div className="flex flex-row flex-wrap  justify-start gap-6 px-8">
+          <h1 className="text-xl font-bold text-slate-600 pb-2">
+           Top 50 Highest Rated
+          </h1>
+        </div>
 
         <div >
           <div className="flex flex-row flex-wrap justify-center gap-6 border-b-2 py-4">
