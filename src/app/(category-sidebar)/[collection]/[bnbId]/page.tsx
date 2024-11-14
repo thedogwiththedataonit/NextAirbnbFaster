@@ -169,8 +169,7 @@ export default async function Page(props: {
                                     decoding="sync"
                                     src={bnb.image_urls[0]}
                                     alt={`A small picture of ${bnb.name}`}
-                                    height={150}
-                                    width={150}
+                                    fill
                                     quality={40}
                                     className="object-cover rounded-2xl"
                                 />
