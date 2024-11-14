@@ -37,7 +37,7 @@ export default async function Home() {
                   className="mb-2 h-50 w-full border hover:bg-accent2 rounded-xl"
                   width={100}
                   height={100}
-                  quality={75}
+                  quality={65}
                 />
                 <div className="flex flex-col items-start justify-center w-full px-2 gap-1">
                 <span className="text-sm font-semibold tracking-tight text-slate-600 flex items-center justify-between w-full">{bnb.name}
