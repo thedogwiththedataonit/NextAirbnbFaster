@@ -2,7 +2,7 @@ import { cookies } from "next/headers";
 import { unstable_cache } from "./unstable-cache";
 import clientPromise from '../mongodb/connect'
 
-const revalidatePeriod = 1;
+const revalidatePeriod = 60 * 60 * 1; // 1 hour
 
 export const getCollectionNames = unstable_cache(
   async () => {
