@@ -6,3 +6,10 @@ Using OpenAI to generate bnb data, feeding that into getImgAI to create images w
 
 
 Who needs loading states when you got prefetching and caching!# NextAirbnbFaster
+
+
+### Environment variables (.env)
+
+MONGODB_URI=""
+
+MONGODB_DB=demo

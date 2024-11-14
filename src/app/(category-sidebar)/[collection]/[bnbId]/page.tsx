@@ -36,7 +36,7 @@ export default async function Page(props: {
     }
 
     return (
-        <div className="w-full px-4 sm:px-0 md:px-32 lg:px-32 xl:px-96">
+        <div className="w-full px-4 sm:px-0 md:px-32 lg:px-32 xl:px-64">
             <div className="flex flex-col gap-2 pt-1">
                 <h1 className="text-xl font-bold text-slate-800 pb-2">
                     {bnbData.name}
