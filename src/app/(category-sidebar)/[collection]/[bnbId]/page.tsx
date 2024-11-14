@@ -48,7 +48,7 @@ export default async function Page(props: {
                         src={bnbData.image_urls[0]}
                         alt={`A small picture of ${bnbData.name}`}
                         height={300}
-                        quality={60}
+                        quality={50}
                         width={256}
                         className="flex-shrink-0 w-[505px] h-[405px] rounded-l-2xl"
                     />
@@ -59,8 +59,8 @@ export default async function Page(props: {
                             src={bnbData.image_urls[1]}
                             alt={`A small picture of ${bnbData.name}`}
                             height={150}
-                            quality={60}
-                            width={256}
+                            quality={50}
+                            width={150}
                             className="flex-shrink-0  w-[200px] h-[200px]"
                         />
                         <Image
@@ -69,8 +69,8 @@ export default async function Page(props: {
                             src={bnbData.image_urls[2]}
                             alt={`A small picture of ${bnbData.name}`}
                             height={150}
-                            quality={60}
-                            width={256}
+                            quality={50}
+                            width={150}
                             className="flex-shrink-0  w-[200px] h-[200px] rounded-tr-2xl"
                         />
                         <Image
@@ -79,8 +79,8 @@ export default async function Page(props: {
                             src={bnbData.image_urls[3]}
                             alt={`A small picture of ${bnbData.name}`}
                             height={150}
-                            quality={60}
-                            width={256}
+                            quality={50}
+                            width={150}
                             className="flex-shrink-0  w-[200px] h-[200px]"
                         />
                         <Image
@@ -89,8 +89,8 @@ export default async function Page(props: {
                             src={bnbData.image_urls[4]}
                             alt={`A small picture of ${bnbData.name}`}
                             height={150}
-                            quality={60}
-                            width={256}
+                            quality={50}
+                            width={150}
                             className="flex-shrink-0  w-[200px] h-[200px] rounded-br-2xl"
                         />
                     </div>
@@ -169,8 +169,9 @@ export default async function Page(props: {
                                     decoding="sync"
                                     src={bnb.image_urls[0]}
                                     alt={`A small picture of ${bnb.name}`}
-                                    fill
-                                    quality={50}
+                                    height={150}
+                                    width={150}
+                                    quality={40}
                                     className="object-cover rounded-2xl"
                                 />
                             </div>
