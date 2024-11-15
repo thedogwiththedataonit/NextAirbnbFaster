@@ -48,7 +48,7 @@ export default async function Page(props: {
                         src={bnbData.image_urls[0]}
                         alt={`A small picture of ${bnbData.name}`}
                         height={300}
-                        quality={50}
+                        quality={75}
                         width={256}
                         className="flex-shrink-0 w-[505px] h-[405px] rounded-l-2xl"
                     />
@@ -170,7 +170,7 @@ export default async function Page(props: {
                                     src={bnb.image_urls[0]}
                                     alt={`A small picture of ${bnb.name}`}
                                     fill
-                                    quality={40}
+                                    quality={35}
                                     className="object-cover rounded-2xl"
                                 />
                             </div>
