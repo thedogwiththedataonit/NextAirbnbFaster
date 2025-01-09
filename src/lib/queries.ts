@@ -12,8 +12,7 @@ export const getCollectionNames = unstable_cache(
       
       // Get all collection names
       const collections = await db.listCollections().toArray();
-      const collectionNames = collections.map(collection => collection.name);
-      
+      const collectionNames = collections.map(collection => collection.name);;
       return collectionNames;
     } catch (error) {
       console.error("Error fetching collection names:", error);
@@ -31,7 +30,7 @@ export const getCountOfAllDocuments = unstable_cache(
     try {
       const client = await clientPromise;
       const db = client.db(process.env.MONGODB_DB) 
-      
+        
       const collectionNames = await getCollectionNames();
       // Get the count of documents in each collection
       const counts = await Promise.all(collectionNames.map(async (collectionName) => {
@@ -58,7 +57,6 @@ export const getDocumentsInCollection = unstable_cache(
     try {
       const client = await clientPromise;
       const db = client.db(process.env.MONGODB_DB) 
-      
       const collection = db.collection(collectionName);
       const documents = await collection.find().toArray();
       //to each document, add the collection name
@@ -118,7 +116,7 @@ export const getHighestRatedDocuments = unstable_cache(
       throw error;
     }
   },
-  ["mongodb-highest-rated-documents"], // Cache key
+  ["highest-rated-documents"], // Cache key
   {
     revalidate: revalidatePeriod, // Revalidate every hour
   }

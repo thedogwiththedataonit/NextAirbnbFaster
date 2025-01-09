@@ -10,7 +10,7 @@ export default async function Layout({
   const allCollections = await getCollectionNames();
   return (
     <div className="flex flex-col w-full flex-grow font-mono w-full overflow-hidden">
-      <ul className="flex flex-row items-start justify-center gap-3 border-b border-slate-100 shadow-md">
+      <ul className="flex flex-row items-start justify-center gap-2 border-b border-slate-100 shadow-md overflow-x-auto">
         {allCollections.map((collection) => (
           <li key={collection}>
             <Link

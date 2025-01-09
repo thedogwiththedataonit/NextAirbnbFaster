@@ -35,7 +35,7 @@ export default async function Home(props: {
               <Link
                 prefetch={true}
                 key={bnb.name}
-                className="flex w-[255px] flex-col items-center text-center"
+                className="flex w-[300px] flex-col items-center text-center"
                 href={`/${bnb.collection}/${bnb.bnbId}`}
               >
                 <Image
@@ -45,8 +45,8 @@ export default async function Home(props: {
                   src={bnb.image_urls[0]}
                   alt={`A small picture of ${bnb.bnbId}`}
                   className="mb-2 h-50 w-full border hover:bg-accent2 rounded-xl"
-                  width={100}
-                  height={100}
+                  width={300}
+                  height={300}
                   quality={70}
                 />
                 <div className="flex flex-col items-start justify-center w-full px-2 gap-1">

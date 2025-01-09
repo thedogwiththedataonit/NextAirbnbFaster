@@ -41,58 +41,63 @@ export default async function Page(props: {
                 <h1 className="text-2xl font-bold text-slate-800 pb-2">
                     {bnbData.name}
                 </h1>
-                <div className="flex flex-row gap-1 justify-center">
-                    <Image
-                        loading="eager"
-                        decoding="sync"
-                        src={bnbData.image_urls[0]}
-                        alt={`A small picture of ${bnbData.name}`}
-                        height={300}
-                        quality={75}
-                        width={256}
-                        className="flex-shrink-0 w-[505px] h-[405px] rounded-l-2xl"
-                    />
-                    <div className="w-fit grid grid-cols-2 gap-1">
+                <div className="flex flex-col md:flex-row gap-1 justify-center">
+                    <div className="relative w-full md:w-1/2 aspect-[5/4]">
                         <Image
                             loading="eager"
                             decoding="sync"
-                            src={bnbData.image_urls[1]}
+                            src={bnbData.image_urls[0]}
                             alt={`A small picture of ${bnbData.name}`}
-                            height={150}
-                            quality={50}
-                            width={150}
-                            className="flex-shrink-0  w-[200px] h-[200px]"
+                            quality={75}
+                            layout="fill"
+                            className="flex-shrink-0 lg:rounded-l-2xl md:rounded-none object-cover rounded-t-2xl"
                         />
-                        <Image
-                            loading="eager"
-                            decoding="sync"
-                            src={bnbData.image_urls[2]}
-                            alt={`A small picture of ${bnbData.name}`}
-                            height={150}
-                            quality={50}
-                            width={150}
-                            className="flex-shrink-0  w-[200px] h-[200px] rounded-tr-2xl"
-                        />
-                        <Image
-                            loading="eager"
-                            decoding="sync"
-                            src={bnbData.image_urls[3]}
-                            alt={`A small picture of ${bnbData.name}`}
-                            height={150}
-                            quality={50}
-                            width={150}
-                            className="flex-shrink-0  w-[200px] h-[200px]"
-                        />
-                        <Image
-                            loading="eager"
-                            decoding="sync"
-                            src={bnbData.image_urls[4]}
-                            alt={`A small picture of ${bnbData.name}`}
-                            height={150}
-                            quality={50}
-                            width={150}
-                            className="flex-shrink-0  w-[200px] h-[200px] rounded-br-2xl"
-                        />
+                    </div>
+                    <div className="w-full md:w-1/2 grid grid-cols-2 grid-rows-2 gap-1">
+                        <div className="relative aspect-square">
+                            <Image
+                                loading="eager"
+                                decoding="sync"
+                                src={bnbData.image_urls[1]}
+                                alt={`A small picture of ${bnbData.name}`}
+                                layout="fill"
+                                quality={50}
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="relative aspect-square">
+                            <Image
+                                loading="eager"
+                                decoding="sync"
+                                src={bnbData.image_urls[2]}
+                                alt={`A small picture of ${bnbData.name}`}
+                                layout="fill"
+                                quality={50}
+                                className="object-cover lg:rounded-tr-2xl md:rounded-none"
+                            />
+                        </div>
+                        <div className="relative aspect-square">
+                            <Image
+                                loading="eager"
+                                decoding="sync"
+                                src={bnbData.image_urls[3]}
+                                alt={`A small picture of ${bnbData.name}`}
+                                layout="fill"
+                                quality={50}
+                                className="object-cover lg:rounded-none rounded-bl-2xl"
+                            />
+                        </div>
+                        <div className="relative aspect-square">
+                            <Image
+                                loading="eager"
+                                decoding="sync"
+                                src={bnbData.image_urls[4]}
+                                alt={`A small picture of ${bnbData.name}`}
+                                layout="fill"
+                                quality={50}
+                                className="object-cover  lg:rounded-rounded-br-2xl rounded-br-2xl"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="flex flex-row gap-1 justify-center border-b-2 py-4 items-center justify-between">
@@ -155,13 +160,13 @@ export default async function Page(props: {
                 <h1 className="text-lg font-bold text-slate-600">
                     Related Airbnbs
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-0 w-full">
                     {related.map((bnb) => (
                         <Link
                             prefetch={true}
                             href={`/${collection}/${bnb.bnbId}`}
                             key={bnb.bnbId}
-                            className="flex flex-col gap-4 cursor-pointer hover:bg-slate-100 p-3 rounded-lg transition-all"
+                            className="flex flex-col gap-4 cursor-pointer hover:bg-slate-100 p-2 rounded-lg transition-all"
                         >
                             <div className="aspect-square relative w-full">
                                 <Image

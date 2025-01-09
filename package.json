@@ -35,7 +35,6 @@
     "@vercel/speed-insights": "^1.0.12",
     "ai": "^3.4.16",
     "bcryptjs": "^2.4.3",
-    "canvas": "^2.11.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.35.1",
