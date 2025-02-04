@@ -23,6 +23,7 @@ export default async function Home() {
           <div className="flex flex-row flex-wrap justify-center gap-6 border-b-2 py-4">
             {highestRated.map((bnb: any) => (
               <Link
+                id={bnb.bnbId}
                 prefetch={true}
                 key={bnb.name}
                 className="flex w-[300px] flex-col items-center text-center"

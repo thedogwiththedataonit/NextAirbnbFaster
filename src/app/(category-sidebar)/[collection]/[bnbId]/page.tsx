@@ -104,7 +104,7 @@ export default async function Page(props: {
                 <h2 className="text-xl font-semibold text-slate-800">
                     A {bnbData.name} in {bnbData.location}
                 </h2>
-                <p className="flex items-center gap-2 text-md font-semibold text-slate-600">
+                <p className="flex items-center gap-2 text-md font-semibold text-slate-600" id="rating">
                     <Star size={20} />
                     {bnbData.rating} stars
                 </p>
@@ -143,7 +143,7 @@ export default async function Page(props: {
                 </div>
                 <div className="border-y-2 border-slate-100 px-4 flex flex-row gap-1 justify-between items-center gap-3 py-4">
                 <span>
-                <p className="text-xl font-bold">
+                <p className="text-xl font-bold" id="price">
                     ${parseFloat(bnbData.price).toFixed(2)} Per Night
                 </p>
                 <p className="text-lg font-semibold">
