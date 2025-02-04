@@ -28,7 +28,7 @@ export default async function RootLayout({
       >
         <DemoPenguin
           clientToken="a06d56c84de8bfe9cec890bde893bf36d1bc5138b58f726f372391a44dae905d"
-          userId={Date.now().toString()}
+          userId={Math.floor(Date.now() / 1000).toString()}
           firstName="Anonymous"
           lastName="User"
           userEmail="anonymous@example.com"
