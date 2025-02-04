@@ -36,7 +36,7 @@ export default async function RootLayout({
             company: "AirbnbFaster",
             role: "User",
           }}
-          devMode={true}
+          devMode={false}
         >
           <div>
             <header className="z-10 flex flex-grow items-center justify-between gap-4 border-b border-slate-200 bg-background py-0 px-6">
