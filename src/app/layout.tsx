@@ -26,6 +26,8 @@ export default async function RootLayout({
       <body
         className={` flex flex-col antialiased`}
       >
+        {
+          /*
         <DemoPenguin
           clientToken="a06d56c84de8bfe9cec890bde893bf36d1bc5138b58f726f372391a44dae905d"
           userId={Math.floor(Date.now() / 1000).toString()}
@@ -38,6 +40,7 @@ export default async function RootLayout({
           }}
           devMode={false}
         >
+          */}
           <div>
             <header className="z-10 flex flex-grow items-center justify-between gap-4 border-b border-slate-200 bg-background py-0 px-6">
               <div className="flex flex-grow flex-col">
@@ -73,7 +76,9 @@ export default async function RootLayout({
             </header>
             {children}
           </div>
+          {/*
         </DemoPenguin>
+        */}
       </body>
     </html>
   );
