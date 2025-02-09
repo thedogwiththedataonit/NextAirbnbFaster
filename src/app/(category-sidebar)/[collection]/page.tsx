@@ -4,6 +4,7 @@ import { Star } from 'lucide-react';
 
 import Image from "next/image";
 
+
 export async function generateStaticParams(): Promise<{ collection: string }[]> {
   const collections = await getCollectionNames();
   return collections.map((collection) => ({
