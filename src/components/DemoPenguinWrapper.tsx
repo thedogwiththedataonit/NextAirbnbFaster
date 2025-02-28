@@ -11,16 +11,15 @@ const DemoPenguinClient = dynamic(
 export function DemoPenguinWrapper({ children }: { children: React.ReactNode }) {
   return (
     <DemoPenguinClient
-      clientToken={process.env.NEXT_PUBLIC_DEMO_PENGUIN_CLIENT_TOKEN || ""}
-      userId={Math.floor(Date.now() / 1000).toString()}
-      firstName="Anonymous"
-      lastName="User"
-      userEmail="anonymous@example.com"
-      additionalInfo={{
-        company: "AirbnbFaster",
-        role: "User",
+      clientToken={"6c1ddbdfebd2bdb5ca1eb7a37ae3f07956bbb23d37f4e1ed64f9e9c047c74c1a"}
+      userInfo={{
+        userId: Math.floor(Date.now() / 1000).toString(),
+        userFirstName: "Anonymous",
+        userLastName: "User",
+        userEmail: "anonymous@example.com",
+        userType: "demo",
       }}
-      devMode={false}
+      devMode={true}
     >
       {children}
     </DemoPenguinClient>
