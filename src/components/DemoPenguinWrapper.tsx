@@ -19,7 +19,7 @@ export function DemoPenguinWrapper({ children }: { children: React.ReactNode }) 
         userEmail: "anonymous@example.com",
         userType: "demo",
       }}
-      devMode={true}
+      devMode={false}
     >
       {children}
     </DemoPenguinClient>
