@@ -41,7 +41,7 @@ export default async function Page(props: {
                 <h1 className="text-2xl font-bold text-slate-800 pb-2">
                     {bnbData.name}
                 </h1>
-                <div className="flex flex-col md:flex-row gap-1 justify-center">
+                <div className="flex flex-row md:flex-row gap-1 justify-center">
                     <div className="relative w-full md:w-1/2 aspect-[5/4]">
                         <Image
                             loading="eager"
