@@ -29,7 +29,6 @@ export default async function RootLayout({
       <body
         className={` flex flex-col antialiased`}
       >
-        <DemoPenguinWrapper>
           <div>
             <header className="z-10 flex flex-grow items-center justify-between gap-4 border-b border-slate-200 bg-background py-0 px-6">
               <div className="flex flex-grow flex-col">
@@ -65,9 +64,6 @@ export default async function RootLayout({
               </header>
               {children}
             </div>
-
-
-        </DemoPenguinWrapper>
       </body>
     </html>
   );
